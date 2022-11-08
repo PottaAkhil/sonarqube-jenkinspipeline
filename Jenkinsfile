@@ -13,3 +13,4 @@ node {
       -D sonar.host.url=http://52.221.196.44:9000/"
     }
   }
+}
