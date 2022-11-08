@@ -1,6 +1,6 @@
 node {
   stage('Clone the Git') {
-    git 'https://github.com/shazforiot/GOL.git'
+    git 'https://https://github.com/PottaAkhil/nodejs-OBT.git'
   }
   stage('SonarQube analysis') {
     def scannerHome = tool 'sonarqube';
@@ -8,9 +8,8 @@ node {
       sh "${scannerHome}/bin/sonar-scanner \
       -D sonar.login=admin \
       -D sonar.password=admin \
-      -D sonar.projectKey=sonarqubetest \
-      -D sonar.exclusions=vendor/**,resources/**,**/*.java \
-      -D sonar.host.url=http://192.168.1XX.XX:9000/"
+      -D sonar.projectKey=64ff26562ec686e6a6d6dd1a13ecb1e056ae4f00 \
+      -D sonar.exclusions=vendor/**,resources/**,**/*.node \
+      -D sonar.host.url=http://52.221.196.44:9000/"
     }
   }
-}
