@@ -1,6 +1,6 @@
 node {
   stage('Clone the Git') {
-    git 'https://https://github.com/PottaAkhil/nodejs-OBT.git'
+    git 'https://github.com/PottaAkhil/sonarqube-jenkinspipeline.git'
   }
   stage('SonarQube analysis') {
     def scannerHome = tool 'sonarqube';
